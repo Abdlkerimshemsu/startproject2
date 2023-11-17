@@ -4,10 +4,10 @@ public class TrimmerDecorator extends Decorator {
     }
 
     @Override
-    public String getCorrectName() {
-        String name = nameable.getCorrectName();
+    public String correctName() {
+        String name = nameable.correctName();
         if (name.length() > 10) {
-            return name.substring(0, 10);
+            name = name.substring(0, 10);
         }
         return name;
     }
