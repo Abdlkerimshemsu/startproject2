@@ -1,11 +1,12 @@
-public class CapitalizeDecorator extends Decorator {
+public class CapitalizeDecorator extends BaseDecorator {
+
     public CapitalizeDecorator(Nameable nameable) {
         super(nameable);
     }
 
     @Override
-    public String correctName() {
-        String name = nameable.correctName();
+    public String correct_name() {
+        String name = nameable.correct_name();
         return name.toUpperCase();
     }
 }
