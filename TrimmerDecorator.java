@@ -1,11 +1,12 @@
-public class TrimmerDecorator extends Decorator {
+public class TrimmerDecorator extends BaseDecorator {
+
     public TrimmerDecorator(Nameable nameable) {
         super(nameable);
     }
 
     @Override
-    public String getCorrectName() {
-        String name = nameable.getCorrectName();
+    public String correct_name() {
+        String name = nameable.correct_name();
         if (name.length() > 10) {
             return name.substring(0, 10);
         }

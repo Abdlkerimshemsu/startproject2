@@ -1,5 +1,9 @@
 public class Student extends Person {
-    private String classroom;
+    private Classroom classroom;
+
+ week_3
+    public Student(String name, int age, boolean parent_permission) {
+        super(name, age, parent_permission);
 
     public Student(int id, String name, int age, boolean parentPermission, String classroom) {
 
@@ -8,11 +12,18 @@ public class Student extends Person {
         super(id, name, age, parentPermission);
 
         this.classroom = classroom;
+ development
     }
 
-    public String getClassroom() {
+    public Classroom getClassroom() {
         return classroom;
     }
+
+ week_3
+    public void setClassroom(Classroom classroom) {
+        this.classroom = classroom;
+    }
+}
 
 }
 
@@ -22,3 +33,4 @@ public class Student extends Person {
     }
 }
 
+ development

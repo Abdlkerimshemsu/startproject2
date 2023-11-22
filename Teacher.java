@@ -1,5 +1,9 @@
 public class Teacher extends Person {
+
     private String specialization;
+
+ week_3
+    public Teacher(String name, int age, boolean parent_permission, String specialization) {
 
     public Teacher(int id, String name, int age, boolean parentPermission, String specialization) {
 
@@ -9,10 +13,13 @@ public class Teacher extends Person {
 
         this.specialization = specialization;
     }
+ development
 
-    public String getSpecialization() {
-        return specialization;
-    }
+        super(name, age, parent_permission);
+
+        this.specialization = specialization;
+
+ week_3
 
 
 
@@ -24,5 +31,6 @@ public class Teacher extends Person {
     @Override
     public boolean canUseServices() {
         return true;
+development
     }
 
